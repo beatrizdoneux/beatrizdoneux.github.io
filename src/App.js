@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Projects from './components/Projects';
 import About from './components/About';
 import Contact from './components/Contact';
+import Section from './components/templates/Section';
 
 function App() {
   return (

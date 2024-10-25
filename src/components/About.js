@@ -1,8 +1,10 @@
+import Section from "./templates/Section"
+
 const About = () => {
     return (
-        <div className="container">
-            <h2>About</h2>
-        </div>
+        <Section sectionName="About">
+
+        </Section>
     )
 }
 

@@ -21,24 +21,24 @@ const Footer = () => {
     };
 
     return (
-        // <Container fluid className="shadow-sm">
-            <Container className="py-2">
-                <Stack direction="horizontal" gap={3} className="justify-content-between">
-                    <p className="m-0">&copy; Beatriz Doneux 2024</p>
-                    <Stack direction="horizontal" gap={2}>
-                        {/* {isDarkMode ? <i class="fa-regular fa-sun"></i> : <i class="fa-solid fa-sun"></i>} */}
-                        <div class="form-check form-switch">
-                            <label class="form-check-label" for="switchDarkMode">
-                            </label>
-                            <input class="form-check-input" type="checkbox" role="switch" id="switchDarkMode"
-                                checked={isDarkMode}
-                                onChange={toggleDarkMode} />
-                        </div>
-                        {isDarkMode ? <i class="fa-solid fa-moon"></i> : <i class="fa-regular fa-moon"></i>}
+        <footer>
+                <Container className="py-2">
+                    <Stack direction="horizontal" gap={3} className="justify-content-between">
+                        <p className="m-0">&copy; Beatriz Doneux 2024</p>
+                        <Stack direction="horizontal" gap={2}>
+                            {/* {isDarkMode ? <i class="fa-regular fa-sun"></i> : <i class="fa-solid fa-sun"></i>} */}
+                            <div class="form-check form-switch">
+                                <label class="form-check-label" for="switchDarkMode">
+                                </label>
+                                <input class="form-check-input" type="checkbox" role="switch" id="switchDarkMode"
+                                    checked={isDarkMode}
+                                    onChange={toggleDarkMode} />
+                            </div>
+                            {isDarkMode ? <i class="fa-solid fa-moon"></i> : <i class="fa-regular fa-moon"></i>}
+                        </Stack>
                     </Stack>
-                </Stack>
-            </Container>
-        // </Container>
+                </Container>
+        </footer>
     )
 }
 
