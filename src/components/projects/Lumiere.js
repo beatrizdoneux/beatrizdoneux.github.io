@@ -7,8 +7,8 @@ const Lumiere = () => {
 
     return (
         <ProjectTemplate
-            className=""
             projectName="Lumière"
+            isTeamProject={true}
             projectDescription="Web application designed specifically for salon businesses to efficiently manage their inventory using cloud technology, keeping track of stock level and minimizing product wastage."
             features="Barcode scanning, product analytics and reporting, expiration tracking and reminder, low stock alert"
             techStack="React, Material UI, AWS, MongoDB"
@@ -18,7 +18,7 @@ const Lumiere = () => {
             modalShow={modalShow}
             setModalShow={setModalShow}
         >
-            <Button variant="light" className="me-1" onClick={() => setModalShow(true)}>System Architecture</Button>
+            <Button variant="light" className="me-1  border border-1" onClick={() => setModalShow(true)}>System Architecture</Button>
             {/* <Button variant="light">Mockups</Button> */}
         </ProjectTemplate>
     )

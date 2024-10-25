@@ -13,8 +13,8 @@ function App() {
     <div className="App container-fluid p-0 d-flex flex-column">
       <CustomNavbar />
       <Hero />
-      <Projects />
       <About />
+      <Projects />
       <Contact />
       <Footer />
     </div>

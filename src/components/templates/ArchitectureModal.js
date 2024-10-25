@@ -11,7 +11,7 @@ function ArchitectureModal({ projectName, frontEndStack, backEndStack, otherTech
         >
             <Modal.Header>
                 <Modal.Title id="contained-modal-title-vcenter">
-                    System Architecture - {projectName}
+                    <h4>System Architecture - {projectName}</h4>
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>

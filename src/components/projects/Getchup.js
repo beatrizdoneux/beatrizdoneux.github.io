@@ -7,8 +7,8 @@ const Getchup = () => {
 
     return (
         <ProjectTemplate
-            className=""
             projectName="Getchup"
+            isTeamProject={true}
             projectDescription="A mobile application that helps users with ADHD enhance their focus and productivity through attainable daily goals and smart reminders."
             features="Smart task divider, focus mode with timer, movement tracking"
             techStack="React, Gluestack, EC2, NGINX, Docker, OpenAI"
@@ -18,8 +18,8 @@ const Getchup = () => {
             modalShow={modalShow}
             setModalShow={setModalShow}
         >
-            <Button variant="light" className="me-1" onClick={() => setModalShow(true)}>System Architecture</Button>
-            <Button variant="light" href="https://getchup.ca" target="_blank" className="me-1">Project website</Button>
+            <Button variant="light" className="me-1  border border-1" onClick={() => setModalShow(true)}>System Architecture</Button>
+            <Button variant="light" href="https://getchup.ca" target="_blank" className="me-1  border border-1">Project website</Button>
             {/* <Button variant="light">Mockups</Button> */}
         </ProjectTemplate>
     )

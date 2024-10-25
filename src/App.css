@@ -8,9 +8,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
-  --dark-blue: #162A4F;
+  --dark-blue: #1b325d;
 }
 
 body {
@@ -21,10 +24,13 @@ body {
   font-family: "Anton", sans-serif;
   font-family: "Paytone One", sans-serif;
   font-family: "Open Sans", sans-serif;
+  font-family: "Cardo", serif;
+  font-family: "Lora", serif;
+  font-family: "Nunito", sans-serif;
   height: 100%;
 }
 
-h1, h2, h3, #hello, footer, nav {
+h1, h2, h3, h4, #hello, footer, nav {
   font-family: "Staatliches", sans-serif;
   color: var(--dark-blue);
 }
