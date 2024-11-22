@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import CustomNavbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -6,7 +5,8 @@ import Footer from './components/Footer';
 import Projects from './components/Projects';
 import About from './components/About';
 import Contact from './components/Contact';
-import Section from './components/templates/Section';
+import './custom.scss'
+
 
 function App() {
   return (

@@ -7,7 +7,7 @@ import Generocity from "./projects/Generocity"
 
 const Projects = () => {
     return (
-        <Section sectionName="I built this!" id="projects">
+        <Section sectionName="I built this" id="projects">
             <Row>
                 <Getchup />
                 <Lumiere />

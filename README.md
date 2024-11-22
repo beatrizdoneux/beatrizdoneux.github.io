@@ -1,3 +1,4 @@
 Hello there!
-I'm Bea, a front-end developer
-This is currently under development, please check again next week!
+I'm Bea, a front-end developer.
+
+This is my portfolio website, built with React (and coffee)!

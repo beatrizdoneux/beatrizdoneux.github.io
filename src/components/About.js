@@ -1,5 +1,6 @@
-import { Badge, Col, Container, Row } from "react-bootstrap"
+import { Badge, Col, Container, Image, Row, Stack } from "react-bootstrap"
 import Section from "./templates/Section"
+import selfie from "../assets/about/self.JPEG"
 
 const frontEnd = ["JavaScript", "React", "HTML", "CSS", "SASS", "Bootstrap", "Material UI", "Gluestack", "Netlify", "Expo Go", "Zustand", "Tanstack"]
 const backEnd = ["Express", "NodeJS", "AWS", "Docker"]
@@ -9,16 +10,22 @@ const databases = ["MongoDB", "Firebase"]
 const About = () => {
     return (
         <Section sectionName="who am I?" id="about">
-            <Row className="mt-2">
+            <Row className="mt-2 d-flex justify-content-center">
                 <Col sm={12} md={6} className="mb-3">
-                <h3 className="fs-5 mb-2">About life:</h3>
-                    <p>Coder by love, airplane pilot by trade, martial artist by a miracle.</p>
-                    <p>Learned to code working in aviation, decided to then make a living out of it.</p>
-                    <p>Post-grad web and mobile developer with a love for clean code, responsive design, and the smell of freshly brewed JavaScript in the morning.</p>
-                    <p>Enjoy doing puzzles, learning new things and baking/eating cake.</p>
-                    <p></p>
+                    <h3 className="fs-5 mb-2">In a word: curious</h3>
+                    <Stack direction="horizontal">
+
+                    <Container>
+                        <p>Coder by love, aviation specialist by trade, martial artist by a miracle.</p>
+                        <p>Learned to code working in aviation, decided to then make a living out of it.</p>
+                        <p>Post-grad web and mobile developer with a love for clean code, responsive design, and the smell of freshly brewed JavaScript in the morning.</p>
+                        <p>Enjoy doing puzzles, learning new things and baking/eating cake.</p>
+                        <p>Detail-oriented, perseverant, curious, adaptable, self-driven, resourceful, cat person.</p>
+                    </Container>
+                    </Stack>
                 </Col>
-                <Col sm={12} md={6}>
+
+                <Col sm={12} md={6} className="mb-3">
                     <h3 className="fs-5 mb-2">Experience points:</h3>
                     <ExperienceSection
                         title="Front-End"
@@ -36,15 +43,20 @@ const About = () => {
                         title="Other technologies"
                         array={others}
                     />
-                    
+                </Col>
 
+                <Col sm={12} md={6} className="mt-3 mb-3 d-flex justify-content-center flex-wrap">
+                    {/* <Container className=""> */}
+                        <Image src={selfie} rounded className="mt-3 mb-3 w-75 mx-auto" />
+                        <p className="w-100 text-center">(I pretend that she likes hugs)</p>
+                    {/* </Container> */}
                 </Col>
             </Row>
         </Section>
     )
 }
 
-const ExperienceSection = ({title, array}) => {
+const ExperienceSection = ({ title, array }) => {
     return (
         <Container>
             <Badge bg="light" className="p-2 border border-2 border-secondary me-2 mb-2 text-dark">{title}</Badge>

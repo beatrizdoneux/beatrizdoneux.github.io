@@ -12,9 +12,9 @@ const Hero = () => {
                 <Col sm={12} md={6} className="d-flex flex-column justify-content-center">
                     <Container>
                         {/* <p className="fs-1 text-center">Hi, I'm Bea,</p> */}
-                        <p className="fs-1 text-center">Hi, I'm Bea, and I write code!</p>
+                        <p className="h1 fs-1 text-center">Hi, I'm Bea, and I write code!</p>
                         {/* <p className=" fs-4 text-center">A full stack developer</p> */}
-                        <p className=" text-center">...and drink coffee</p>
+                        <p className="h5 text-center">...and drink coffee</p>
                     </Container>
                 </Col>
                 <Col  sm={12} md={6}>

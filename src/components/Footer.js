@@ -23,9 +23,9 @@ const Footer = () => {
     return (
         <footer>
                 <Container className="py-2">
-                    <Stack direction="horizontal" gap={3} className="justify-content-between">
+                    <Stack direction="horizontal" gap={3} className="justify-content-around">
                         <p className="m-0">&copy; Beatriz Doneux 2024</p>
-                        {/* <Stack direction="horizontal" gap={2}>
+                        <Stack direction="horizontal" gap={2}>
                             <div class="form-check form-switch">
                                 <label class="form-check-label" for="switchDarkMode">
                                 </label>
@@ -34,8 +34,8 @@ const Footer = () => {
                                     onChange={toggleDarkMode} />
                             </div>
                             {isDarkMode ? <i class="fa-solid fa-moon"></i> : <i class="fa-regular fa-moon"></i>}
-                        </Stack> */}
-                        <p>Made with <i class="fa-solid fa-heart"></i> and lots of <i class="fa-solid fa-mug-hot"></i></p>
+                        </Stack>
+                        <p className="m-0">Made with <i class="fa-solid fa-heart"></i> and <i class="fa-solid fa-mug-hot"></i></p>
                     </Stack>
                 </Container>
         </footer>
