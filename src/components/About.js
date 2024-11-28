@@ -47,7 +47,7 @@ const About = () => {
 
                 <Col sm={12} md={6} className="mt-3 mb-3 d-flex justify-content-center flex-wrap">
                     {/* <Container className=""> */}
-                        <Image src={selfie} rounded className="mt-3 mb-3 w-75 mx-auto" />
+                        <Image src={selfie} rounded className="mt-3 mb-3 w-75 mx-auto" aria-label="black and white looking annoyed while being hugged by her owner"/>
                         <p className="w-100 text-center">(I pretend that she likes hugs)</p>
                     {/* </Container> */}
                 </Col>

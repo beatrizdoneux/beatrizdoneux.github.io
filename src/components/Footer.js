@@ -27,13 +27,13 @@ const Footer = () => {
                         <p className="m-0">&copy; Beatriz Doneux 2024</p>
                         <Stack direction="horizontal" gap={2}>
                             <div class="form-check form-switch">
-                                <label class="form-check-label" for="switchDarkMode">
+                                <label class="form-check-label" for="switchDarkMode" aria-label='switch dark mode' >
                                 </label>
                                 <input class="form-check-input" type="checkbox" role="switch" id="switchDarkMode"
                                     checked={isDarkMode}
                                     onChange={toggleDarkMode} />
                             </div>
-                            {isDarkMode ? <i class="fa-solid fa-moon"></i> : <i class="fa-regular fa-moon"></i>}
+                            {isDarkMode ? <i class="fa-solid fa-moon" aria-hidden="true" ></i> : <i class="fa-regular fa-moon" aria-hidden="true" ></i>}
                         </Stack>
                         <p className="m-0">Made with <i class="fa-solid fa-heart"></i> and <i class="fa-solid fa-mug-hot"></i></p>
                     </Stack>

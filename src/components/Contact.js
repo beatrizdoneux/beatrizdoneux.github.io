@@ -8,11 +8,11 @@ const Contact = () => {
             <Row>
                 <ContactCard
                     title="Get serious"
-                    href="mailto:beatrizdoneux@outlook.com"
+                    href="#"
                     icon="fa-regular fa-file"
                 >
                     {/* <p>Let's get serious</p> */}
-                    <p>Download my resume <a href="mailto:beatrizdoneux@outlook.com">here</a></p>
+                    <p>Download my resume <a href="/Beatriz_Doneux_Resume.pdf" download="/Beatriz_Doneux_Resume.pdf" target="_blank" >here</a></p>
                 </ContactCard>
 
                 <ContactCard
@@ -30,7 +30,7 @@ const Contact = () => {
                     icon="fa-brands fa-linkedin-in"
                 >
                     {/* <p>Let's connect!</p> */}
-                    <p>Find me on <a href="https://www.linkedin.com/in/beatrizdoneux/">LinkedIn</a></p>
+                    <p>Find me on <a href="https://www.linkedin.com/in/beatrizdoneux/" target="_blank">LinkedIn</a></p>
                 </ContactCard>
 
                 <ContactCard
@@ -39,10 +39,10 @@ const Contact = () => {
                     icon="fa-brands fa-github"
                 >
                     {/* <p>See my code!</p> */}
-                    <p>Check out what I'm up to on <a href="https://github.com/beatrizdoneux">Github</a></p>
+                    <p>Check out what I'm up to on <a href="https://github.com/beatrizdoneux" target="_blank">Github</a></p>
                 </ContactCard>
                 <Col sm={12} className="mt-3 mb-3 d-flex justify-content-center flex-wrap">
-                    <Image src={leaves} className="mt-5 mb-3 mx-auto" fluid style={{maxWidth: "110px"}}/>
+                    <Image src={leaves} className="mt-5 mb-3 mx-auto" fluid style={{maxWidth: "110px"}} aria-hidden="true"/>
                 </Col>
             </Row>
         </Section >
@@ -60,11 +60,11 @@ const ContactCard = ({ title, href, icon, children }) => {
                         </span> */}
                         {title}
                     </h3>
-                    <a href={href}><i class={`${icon}`}></i></a>
+                    <span href={href}><i class={`${icon}`} aria-hidden="true" ></i></span>
                 </Card.Header>
                 <Card.Body className="d-flex flex-column">
                     {children}
-                    <a href={href} className="ms-auto text-warning"><i class="fa-solid fa-arrow-right"></i></a>
+                    {/* <a href={href} className="ms-auto text-warning"><i class="fa-solid fa-arrow-right"></i></a> */}
                 </Card.Body>
             </Card>
         </Col>

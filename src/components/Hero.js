@@ -19,7 +19,7 @@ const Hero = () => {
                 </Col>
                 <Col  sm={12} md={6}>
                     <Container>
-                        <Image src={img} className="img-fluid" />
+                        <Image src={img} className="img-fluid" aria-label="an orange flower drawing in watercolor"/>
                     </Container>
                 </Col>
             </Row>
