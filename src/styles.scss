@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+$font-title: "Barlow Condensed", sans-serif;
+$font-body: "Raleway", sans-serif;
+
+$color-amber: oklch(75% 0.183 55.934);
+$color-orange: oklch(82.8% 0.189 84.429);
+$color-red: oklch(70.4% 0.191 22.216);
+$color-gray: oklch(92.8% 0.006 264.531);
+$color-green: oklch(89.7% 0.196 126.665);
+$color-lime: oklch(93.8% 0.127 124.321);
+$color-light-gray: oklch(98.5% 0.002 247.839);
+$color-dark: oklch(30.2% 0.056 229.695);
+$color-light: #fff;
+
+body {
+  background-color: $color-light-gray;
+}
+
+h1 {
+    font-family: $font-title;
+    color: $color-dark;
+    text-transform:uppercase;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: normal;
+}
