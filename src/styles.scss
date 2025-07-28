@@ -14,15 +14,80 @@ $color-light-gray: oklch(98.5% 0.002 247.839);
 $color-dark: oklch(30.2% 0.056 229.695);
 $color-light: #fff;
 
+$breakpoint-md: 760px;
+$breakpoint-lg: 1000px;
+
 body {
-  background-color: $color-light-gray;
+    background-color: $color-light-gray;
+    padding: 1rem;
+    margin: 0;
 }
 
 h1 {
     font-family: $font-title;
     color: $color-dark;
-    text-transform:uppercase;
+    text-transform: uppercase;
     text-align: center;
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: normal;
+}
+
+p {
+    font-family: $font-body;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-family: $font-body;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin project-card($bg) {
+    padding: 1rem;
+    border: 1px solid $color-gray;
+    border-radius: 10px;
+    margin-top: 2rem;
+    background-color: $bg;
+
+    h2 {
+        font-family: $font-title;
+        font-weight: normal;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+        font-family: $font-body;
+        color: $color-dark;
+        text-align: center;
+    }
+}
+
+.pomodoro {
+    @include project-card($color-green);
+}
+
+@media screen and (min-width: $breakpoint-md) {
+    header {
+        max-width: 80vw;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: $breakpoint-lg) {
+    header {
+        p {
+            text-align: center;
+        }
+    }
 }
