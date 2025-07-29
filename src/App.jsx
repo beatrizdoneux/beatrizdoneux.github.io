@@ -11,8 +11,17 @@ function App() {
             </header>
             <main>
                 <div className="projects-container">
-                    <ProjectCard href="https://beatrizdoneux.github.io/timer" className="pomodoro">
+                    <ProjectCard
+                        href="https://beatrizdoneux.github.io/timer"
+                        className="pomodoro"
+                    >
                         <h2>Pomodoro Timer</h2>
+                    </ProjectCard>
+                    <ProjectCard
+                        href="https://beatrizdoneux.github.io/snake/"
+                        className="snake"
+                    >
+                        <h2>Snake</h2>
                     </ProjectCard>
                 </div>
             </main>

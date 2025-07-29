@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
 
 $font-title: "Barlow Condensed", sans-serif;
 $font-body: "Raleway", sans-serif;
@@ -47,22 +49,21 @@ footer {
 }
 
 .projects-container {
-    display: flex;
+    display: grid;
     justify-content: center;
 }
 
 @mixin project-card($bg) {
-    padding: 1rem;
-    border: 1px solid $color-gray;
+    padding: 1rem 2rem;
     border-radius: 10px;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     background-color: $bg;
 
     h2 {
-        font-family: $font-title;
         font-weight: normal;
-        text-transform: uppercase;
         margin: 0;
+        text-transform: uppercase;
+        color: white;
     }
 
     a {
@@ -71,10 +72,21 @@ footer {
         color: $color-dark;
         text-align: center;
     }
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .pomodoro {
-    @include project-card($color-green);
+    // @include project-card(#F6F4F0, #4DA1A9, #2E5077);
+    @include project-card(#4DA1A9);
+}
+
+
+.snake {
+    // @include project-card(#f0f0f0, #36AE7C, #EB5353, FF8E00);
+    @include project-card(#36AE7C);
 }
 
 @media screen and (min-width: $breakpoint-md) {
