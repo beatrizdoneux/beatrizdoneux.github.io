@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react';
 import { Switch } from '@headlessui/react'
+import { SunIcon } from '@heroicons/react/24/solid';
+import { MoonIcon } from '@heroicons/react/24/solid';
 
 
 
 export default function DarkModeToggle() {
     const [enabled, setEnabled] = useState(() => localStorage.theme === "dark")
 
-        useEffect(() => {
+    useEffect(() => {
         const root = document.documentElement;
 
         if (enabled) {
@@ -22,9 +24,11 @@ export default function DarkModeToggle() {
         <Switch
             checked={enabled}
             onChange={setEnabled}
-            className="group inline-flex h-6 w-11 items-center rounded-full bg-gray transition data-checked:bg-green hover:cursor-pointer"
+            className="group inline-flex h-6 w-11 items-center rounded-full bg-orange transition data-checked:bg-green hover:cursor-pointer"
         >
-            <span className="size-4 translate-x-1 rounded-full bg-white transition group-data-checked:translate-x-6" />
+            <span className="size-5 translate-x-1 rounded-full transition group-data-checked:translate-x-5" >
+                {enabled ? <MoonIcon /> : <SunIcon />}
+            </span>
         </Switch>
     )
 }
