@@ -1,1 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+
+    /* --color-white: #F9F8EB;
+    --color-green: #76B39D;
+    --color-blue: #05004E;
+    --color-orange: #FD5F00; */
+
+    /* --color-white: #DBF6E9;
+    --color-green: #9DDFD3;
+    --color-blue: #31326F;
+    --color-orange: #FFC93C; */
+
+    /* --color-white: #D8EBE4;
+    --color-green: #007580;
+    --color-blue: #282846;
+    --color-orange: #FED049; */
+
+    --color-white: #F4F6FF;
+    --color-green: #127681;
+    --color-blue: #10375C;
+    --color-orange: #F3C623;
+    --color-gray: var(--color-gray-400);
+
+
+    --font-title: "Barlow Condensed", sans-serif;
+    --font-body: "Raleway", sans-serif;
+}
