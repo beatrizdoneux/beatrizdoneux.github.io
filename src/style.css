@@ -21,11 +21,17 @@
     --color-blue: #282846;
     --color-orange: #FED049; */
 
-    --color-white: #F4F6FF;
+    /* --color-white: #F4F6FF;
     --color-green: #127681;
     --color-blue: #10375C;
     --color-orange: #F3C623;
-    --color-gray: var(--color-gray-400);
+    --color-gray: var(--color-gray-400); */
+
+    --color-white: #dfe5ec;
+    --color-green: #599692;
+    --color-blue: #11172a;
+    --color-orange: #F3C623;
+    --color-gray: #626c7d;
 
 
     --font-title: "Barlow Condensed", sans-serif;
