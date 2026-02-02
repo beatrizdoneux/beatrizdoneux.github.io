@@ -41,7 +41,3 @@
 .paragraph {
     @apply text-lg mt-4 mb-2
 }
-
-.tag {
-    @apply rounded-2xl bg-green/30 py-1 px-4 text-blue text-base dark:text-white
-}

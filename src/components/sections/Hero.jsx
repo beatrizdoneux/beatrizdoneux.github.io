@@ -1,6 +1,5 @@
-import Section from "../helpers/Section";
-import Flower from "../Flower";
-import Flower2 from "../Flower2";
+import Section from "../helpers/Section"
+import Flower from "../Flower"
 
 export default function Hero() {
     return (
@@ -10,7 +9,7 @@ export default function Hero() {
                 <p className="text-2xl">A front-end developer</p>
             </div>
             <div className="max-h-1/10">
-                <Flower2 className="stroke-green fill-green dark:fill-white dark:stroke-white " />
+                <Flower className="stroke-green fill-green dark:fill-white dark:stroke-white " />
             </div>
         </div>
     )
