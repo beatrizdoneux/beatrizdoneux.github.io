@@ -6,8 +6,8 @@ export default function Flower2({className}) {
      width="2.66667in" height="4.26667in"
      viewBox="0 0 800 1280">
   <path id="Imported Path"
-  class={ className }
-        stroke="currentColor" stroke-width="1" fill="currentColor"
+  className={ className }
+        stroke="currentColor" strokeWidth="1" fill="currentColor"
         d="M 474.48,1276.25
            C 474.14,1274.19 473.68,1271.38 473.45,1270.00
              471.84,1260.37 468.42,1198.32 466.44,1143.00
