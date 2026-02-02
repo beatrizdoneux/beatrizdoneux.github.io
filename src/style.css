@@ -37,3 +37,7 @@
     --font-title: "Barlow Condensed", sans-serif;
     --font-body: "Raleway", sans-serif;
 }
+
+.paragraph {
+    @apply text-lg mt-6
+}
