@@ -1,7 +1,6 @@
 import { Route, Router, Routes } from "react-router-dom";
 import Navbar from "./components/sections/Navbar";
 import Home from "./components/Home";
-import DarkModeToggle from "./components/helpers/DarkModeToggle";
 
 export default function App() {
 	return (
@@ -10,7 +9,6 @@ export default function App() {
 			<Routes>
 				<Route path="/" element={<Home />} />
 			</Routes>
-			<DarkModeToggle />
 		</div>
 	)
 }
