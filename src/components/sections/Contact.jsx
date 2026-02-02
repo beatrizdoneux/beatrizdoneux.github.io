@@ -14,7 +14,7 @@ export default function Contact() {
     return (
         <Section title="Contact">
             <p className="paragraph">I'd love to hear from you! Let's...</p>
-            <div className="mt-5">
+            <div className="mt-5 md:mt-7 ">
                 <ContactCard
                     title="Chat"
                     description="Send me an email."
@@ -42,9 +42,9 @@ function ContactCard({ title, description, link, icon }) {
     return (
         <Card link={link} className="!mb-3">
             <div className="flex gap-7 items-center ">
-                <FontAwesomeIcon icon={icon} className="text-2xl text-green" />
+                <FontAwesomeIcon icon={icon} className="text-2xl text-green md:text-4xl" />
                 <div>
-                    <h3 className="font-title uppercase text-2xl">{title}</h3>
+                    <h3 className="heading-3">{title}</h3>
                     <p className="paragraph mt-2">{description}</p>
                 </div>
             </div>

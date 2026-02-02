@@ -39,5 +39,9 @@
 }
 
 .paragraph {
-    @apply text-lg mt-4 mb-2
+    @apply text-lg mt-4 mb-2 md:text-2xl md:mt-6
+}
+
+.heading-3 {
+    @apply font-title uppercase text-2xl md:text-4xl
 }

@@ -28,7 +28,7 @@ export default function Navbar() {
                         </DisclosureButton>
                     </div>
                     <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between ">
-                        <div className="flex shrink-0 items-center">
+                        <div className="flex shrink-0 items-center md:text-xl">
                             <Link to="/">Beatriz Doneux</Link>
                         </div>
 
@@ -42,7 +42,7 @@ export default function Navbar() {
                                         aria-current={item.current ? 'page' : undefined}
                                         className={classNames(
                                             item.current ? '' : 'text-gray hover:text-blue dark:hover:text-white',
-                                            ' px-2 py-1 text-sm cursor-pointer',
+                                            ' px-2 py-1 text-sm cursor-pointer md:text-xl',
                                         )}
                                     >
                                         {item.name}

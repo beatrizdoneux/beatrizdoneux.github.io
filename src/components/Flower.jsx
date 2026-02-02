@@ -3,7 +3,6 @@ export default function Flower2({className}) {
 <svg xmlns="http://www.w3.org/2000/svg"
      xmlns:svg="http://www.w3.org/2000/svg"
      version="1.1"
-     width="2.66667in" height="4.26667in"
      viewBox="0 0 800 1280">
   <path id="Imported Path"
   className={ className }
