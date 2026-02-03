@@ -43,5 +43,5 @@
 }
 
 .heading-3 {
-    @apply font-title uppercase text-xl md:text-4xl lg:mb-6
+    @apply font-title uppercase text-xl
 }

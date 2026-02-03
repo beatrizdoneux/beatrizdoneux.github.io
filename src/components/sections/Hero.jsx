@@ -4,11 +4,11 @@ import Icon from "../helpers/Icon"
 
 export default function Hero() {
     return (
-        <div className="mx-auto max-w-7xl px-6 py-6 sm:px-6 lg:px-8">
+        <div className="mx-auto w-full px-6 py-6">
 
             <div className="mt-2 mb-7 text-left ">
-                <p className="text-5xl mb-3 md:text-7xl font-title uppercase">Beatriz Doneux</p>
-                <p className="text-2xl md:text-4xl font-title uppercase mb-5">Full stack developer</p>
+                <p className="text-5xl mb-3 font-title uppercase">Beatriz Doneux</p>
+                <p className="text-2xl font-title uppercase mb-5">Full stack developer</p>
                 <p className="paragraph">I build clean, accessible front-end experiences at the intersection of design and code.</p>
             </div>
             <div className="flex gap-5">

@@ -42,7 +42,7 @@ function ContactCard({ title, description, link, icon }) {
     return (
         <Card link={link} className="!mb-3 !lg:mb-0">
             <div className="flex gap-5 items-center ">
-                <FontAwesomeIcon icon={icon} className="text-2xl md:text-4xl" />
+                <FontAwesomeIcon icon={icon} className="text-2xl " />
                 <div>
                     <h3 className="heading-3">{title}</h3>
                     <p className="paragraph mt-2">{description}</p>

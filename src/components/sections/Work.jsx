@@ -35,9 +35,9 @@ function ProjectCard({ title, description, link, tags }) {
     return (
         <Card link={link}>
             <div className="flex flex-col gap-2">
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center md:justify-start md: gap-8">
                     <h3 className="heading-3">{title}</h3>
-                    <ArrowUpRightIcon aria-hidden="true" className="size-4 text-green md:size-8" />
+                    <ArrowUpRightIcon aria-hidden="true" className="size-4 text-green" />
                 </div>
 
                 <p className="paragraph">{description}</p>
