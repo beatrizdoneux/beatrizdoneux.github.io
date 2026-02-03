@@ -4,7 +4,8 @@ import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 
 export default function Work() {
     return (
-        <Section title="Work" >
+        <Section title="Work">
+            <div className="lg:grid lg:grid-cols-2 lg:gap-4">
             <ProjectCard
             title="Three JS"
             description="A compilation of projects created using ThreeJS, React Three Fiber and Blender."
@@ -25,6 +26,7 @@ export default function Work() {
             link=""
             tags={["MongoDB", "Express", "React", "NodeJS", "Firebase", "AWS"]}
             />
+            </div>
         </Section>
     )
 }

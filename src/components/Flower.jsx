@@ -1,11 +1,11 @@
-export default function Flower2({className}) {
-    return (
-<svg xmlns="http://www.w3.org/2000/svg"
-     xmlns:svg="http://www.w3.org/2000/svg"
-     version="1.1"
-     viewBox="0 0 800 1280">
-  <path id="Imported Path"
-  className={ className }
+export default function Flower2({ className }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg"
+      xmlns:svg="http://www.w3.org/2000/svg"
+      version="1.1"
+      className={`h-full w-auto ${className}`}
+      viewBox="0 0 800 1280">
+      <path id="Imported Path"
         stroke="currentColor" strokeWidth="1" fill="currentColor"
         d="M 474.48,1276.25
            C 474.14,1274.19 473.68,1271.38 473.45,1270.00
@@ -576,7 +576,7 @@ export default function Flower2({className}) {
              230.41,176.60 239.84,188.48 245.18,193.71
              249.77,198.20 259.95,204.93 262.25,204.98
              262.66,204.99 263.00,204.38 263.00,203.61 Z" />
-</svg>
+    </svg>
 
-    )
+  )
 }
