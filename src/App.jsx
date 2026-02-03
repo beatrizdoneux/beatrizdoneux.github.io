@@ -5,7 +5,7 @@ import Home from "./components/Home";
 export default function App() {
 	return (
 		<div className="bg-white text-blue dark:bg-blue dark:text-white">
-			<Navbar />
+			{/* <Navbar /> */}
 			<Routes>
 				<Route path="/" element={<Home />} />
 			</Routes>

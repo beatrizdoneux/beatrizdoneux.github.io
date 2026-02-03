@@ -7,11 +7,15 @@ import Work from "./sections/Work";
 export default function Home() {
     return (
         <>
-        <Hero/>
-        <About />
-        <Work />
-        <Contact />
-        <Footer />
+            <div className="flex flex-col gap-10">
+                <Hero />
+                <div className="flex flex-col gap-10">
+                    <About />
+                    <Work />
+                    <Contact />
+                </div>
+                <Footer />
+            </div>
         </>
     )
 }
