@@ -1,5 +1,4 @@
 import About from "./sections/About";
-import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import Hero from "./sections/Hero";
 import Work from "./sections/Work";
@@ -7,14 +6,15 @@ import Work from "./sections/Work";
 export default function Home() {
     return (
         <>
-            <div className="flex flex-col gap-10 md:py-12 md:px-10">
-                <Hero />
-                <div className="flex flex-col gap-10">
-                    <About />
-                    <Work />
-                    <Contact />
+            <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-16 lg:py-0">
+                <div className="lg:flex lg:justify-between lg:gap-4">
+                    <Hero className="" />
+                    <main className="pt-24 lg:w-[60%] lg:py-24">
+                        <About />
+                        <Work />
+                        <Footer />
+                    </main>
                 </div>
-                <Footer />
             </div>
         </>
     )

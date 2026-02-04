@@ -1,27 +1,34 @@
-import Section from "../helpers/Section"
-import Flower from "../Flower"
 import Icon from "../helpers/Icon"
+import Navbar from "./Navbar"
 
 export default function Hero() {
     return (
-        <div className="mx-auto w-full px-6 py-6">
+        <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[40%] lg:flex-col lg:justify-between lg:py-24">
+            <div>
+                <h1><a href="/" >Beatriz Doneux</a></h1>
+                <h2 className="!text-lg mt-4 sm:text-xl">Full stack developer</h2>
+                <p className="mt-4 max-w-xs">I build clean, accessible front-end experiences at the intersection of design and code.</p>
 
-            <div className="mt-2 mb-7 text-left ">
-                <p className="text-5xl mb-3 font-title uppercase">Beatriz Doneux</p>
-                <p className="text-2xl font-title uppercase mb-5">Full stack developer</p>
-                <p className="paragraph">I build clean, accessible front-end experiences at the intersection of design and code.</p>
-            </div>
-            <div className="flex gap-5">
-                <Icon href="mailto:beatrizdoneux@outlook.com" label="" icon="fa-regular fa-envelope" />
-                <Icon href="https://www.linkedin.com/in/beatrizdoneux/" label="" icon="fa-brands fa-linkedin-in" />
-                <Icon href="https://github.com/beatrizdoneux" label="" icon="fa-brands fa-github" />
-
+                <Navbar/>
             </div>
 
-            {/* <div className="flex-1 min-h-0 flex items-center justify-center w-full">
-                <Flower className="max-h-full max-w-1/2 stroke-green fill-green dark:fill-white dark:stroke-white" />
-            </div> */}
-        </div>
+            <ul className="mt-8 flex items-center" aria-label="Social media and resumé">
+                <li className="mr-5 shrink-0 text-xs">
+                    <Icon href="mailto:beatrizdoneux@outlook.com" label="Email" icon="fa-regular fa-envelope" />
+                </li>
+                <li className="mr-5 shrink-0 text-xs">
+                    <Icon href="https://www.linkedin.com/in/beatrizdoneux/" label="LinkedIn" icon="fa-brands fa-linkedin-in" />
+                </li>
+                <li className="mr-5 shrink-0 text-xs">
+                    <Icon href="https://github.com/beatrizdoneux" label="Github" icon="fa-brands fa-github" />
+                </li>
+                {/* <li>
+                    <a className="rounded-lg bg-accent-2 py-1 px-3 hover:cursor-pointer dark:bg-accent-1 dark:text-primary-light">
+                        Resume
+                    </a>
+                </li> */}
+            </ul>
+        </header>
     )
 }
 

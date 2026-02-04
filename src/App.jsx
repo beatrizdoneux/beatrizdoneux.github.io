@@ -1,11 +1,9 @@
-import { Route, Router, Routes } from "react-router-dom";
-import Navbar from "./components/sections/Navbar";
+import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 
 export default function App() {
 	return (
-		<div className="bg-white text-blue dark:bg-blue dark:text-white">
-			{/* <Navbar /> */}
+		<div className="bg-primary-light text-primary-dark dark:bg-primary-dark dark:text-primary-light">
 			<Routes>
 				<Route path="/" element={<Home />} />
 			</Routes>

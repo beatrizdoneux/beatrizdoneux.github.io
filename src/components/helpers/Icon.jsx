@@ -11,11 +11,13 @@ export default function Icon({ icon, href, label }) {
     return (
         <a
             href={href}
-            aria-label={label}
+            aria-label={`${label} Opens in a new tab`}
             target="_blank"
             rel="noopener noreferrer"
+            title={label}
+            className="hover:text-accent-2 dark:hover:text-accent-1"
         >
-            <FontAwesomeIcon icon={icon} aria-hidden="true" className="text-2xl " />
+            <FontAwesomeIcon icon={icon} aria-hidden="true" className="text-2xl" />
         </a>
     )
 }

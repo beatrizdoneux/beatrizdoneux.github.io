@@ -6,42 +6,34 @@
 
 @theme {
 
-    /* --color-white: #F9F8EB;
-    --color-green: #76B39D;
-    --color-blue: #05004E;
-    --color-orange: #FD5F00; */
+    --color-primary-light: #F9F8EB;
+    --color-primary-dark: #05004E;
+    --color-accent-1: #76B39D;
+    --color-accent-2: #FD5F00;
+    --color-gray: #64748B;
 
-    /* --color-white: #DBF6E9;
-    --color-green: #9DDFD3;
-    --color-blue: #31326F;
-    --color-orange: #FFC93C; */
-
-    /* --color-white: #D8EBE4;
-    --color-green: #007580;
-    --color-blue: #282846;
-    --color-orange: #FED049; */
-
-    /* --color-white: #F4F6FF;
-    --color-green: #127681;
-    --color-blue: #10375C;
-    --color-orange: #F3C623;
-    --color-gray: var(--color-gray-400); */
-
-    --color-white: #dfe5ec;
-    --color-green: #599692;
-    --color-blue: #11172a;
-    --color-orange: #F3C623;
-    --color-gray: #626c7d;
-
+    --color-primary-light: #F5F5F5;
+    --color-primary-dark: #000839;
+    --color-accent-1: #005082;
+    --color-accent-2: #FFA41B;
+    --color-gray: #64748B;
 
     --font-title: "Barlow Condensed", sans-serif;
     --font-body: "Raleway", sans-serif;
 }
 
-.paragraph {
-    @apply text-base
+p {
+    @apply text-base;
 }
 
-.heading-3 {
-    @apply font-title uppercase text-xl
+h1, h2, h3, h4, h5, h6 {
+    @apply font-title uppercase;
+}
+
+h1 {
+    @apply text-4xl sm:text-5xl;
+}
+
+h2 {
+    @apply text-3xl;
 }

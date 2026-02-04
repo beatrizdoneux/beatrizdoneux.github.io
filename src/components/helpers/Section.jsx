@@ -1,14 +1,8 @@
-import React from "react"
-
-export default function Section({title, children, className=""}) {
+export default function Section({id, title, children, className=""}) {
     return(
-        <div className={`mx-auto px-6 py-2 w-full font-body ${className}`}>
-            <div className="font-title uppercase text-left text-3xl mb-6 " >
+        <section id={id} className={`mb-16 scroll-mt-16 flex flex-col gap-5 md:mb-24 lg:mb-36 lg:scroll-mt-24 ${className}`}>
                 <h2>{title}</h2>
-            </div>
-            <div className="flex flex-col gap-5">
             {children}
-            </div>
-        </div>
+        </section>
     )
 }

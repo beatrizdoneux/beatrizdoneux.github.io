@@ -4,7 +4,7 @@ import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 
 export default function Work() {
     return (
-        <Section title="Work">
+        <Section id="work" title="Work">
             <div className="flex flex-col gap-15">
                 <ProjectCard
                     title="Three JS"
@@ -35,17 +35,20 @@ function ProjectCard({ title, description, link, tags }) {
     return (
         <Card link={link}>
             <div className="flex flex-col gap-2">
-                <div className="flex justify-between items-center md:justify-start md: gap-8">
-                    <h3 className="heading-3">{title}</h3>
-                    <ArrowUpRightIcon aria-hidden="true" className="size-4 text-green" />
+                <div className="flex justify-between items-center md:justify-start md:gap-8">
+                    <h3>{title}</h3>
+                    <ArrowUpRightIcon aria-hidden="true" className="size-4 text-accent-2 dark:text-accent-1 dark:size-5" />
                 </div>
 
-                <p className="paragraph">{description}</p>
+                <div className="flex flex-col gap-2 lg:border-l-1 lg:border-primary-dark lg:dark:border-accent-1 lg:pl-4">
 
-                <div className="flex gap-3 flex-wrap mt-2">
-                    {tags.map((tag) => (
-                        <span key={tag} className="rounded-2xl bg-green/30 py-1 px-3 text-blue text-sm dark:text-white">{tag}</span>
-                    ))}
+                    <p>{description}</p>
+
+                    <div className="flex gap-3 flex-wrap mt-2">
+                        {tags.map((tag) => (
+                            <span key={tag} className="rounded-2xl border-1 border-accent-2 text-primary-dark py-1 px-3 text-sm dark:border-accent-1 dark:text-primary-light">{tag}</span>
+                        ))}
+                    </div>
                 </div>
             </div>
 
