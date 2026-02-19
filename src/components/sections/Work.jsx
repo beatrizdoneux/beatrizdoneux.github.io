@@ -1,6 +1,9 @@
-import Card from "../helpers/Card";
-import Section from "../helpers/Section";
-import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
+import Card from "../helpers/Card"
+import Section from "../helpers/Section"
+import { ArrowUpRightIcon } from "@heroicons/react/24/solid"
+import { Description, Dialog, DialogPanel, DialogTitle } from "@headlessui/react"
+import { useState } from "react"
+
 
 export default function Work() {
     return (
@@ -16,14 +19,14 @@ export default function Work() {
                 <ProjectCard
                     title="Getchup"
                     description="Mobile application that helps users with ADHD enhance their focus and productivity through attainable daily goals and smart reminders."
-                    link=""
+                    link="../assets/Getchup_Proposal.pdf"
                     tags={["React Native", "Open AI", "Zustand", "Tanstack"]}
                 />
 
                 <ProjectCard
                     title="Lumière"
                     description="A web application that helps beauty salon businesses to streamline their inventory management process and reduce product wastage."
-                    link=""
+                    link="../assets/Lumiere_Proposal.pdf"
                     tags={["MongoDB", "Express", "React", "NodeJS", "Firebase", "AWS"]}
                 />
             </div>

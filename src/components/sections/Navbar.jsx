@@ -1,7 +1,7 @@
 const navigation = [
     { name: 'Home', to: '#', current: true },
-    { name: 'About', to: '#', current: false },
-    { name: 'Work', to: '#', current: false },
+    { name: 'About', to: '#about', current: false },
+    { name: 'Work', to: '#work', current: false },
 ]
 
 function classNames(...classes) {
@@ -14,14 +14,14 @@ export default function Navbar() {
             <ul className="mt-16 w-max">
                 <li>
                     <a className="group flex items-center py-3 active" href="#about">
-                        <span className="text-lg font-title uppercase text-gray group-hover:text-primary-dark">
+                        <span className="text-lg font-title uppercase text-gray hover:text-primary-dark dark:hover:text-primary-light">
                             About
                         </span>
                     </a>
                 </li>
                 <li>
                     <a className="group flex items-center py-3" href="#work">
-                        <span className="text-lg font-title uppercase text-gray group-hover:text-primary-dark">
+                        <span className="text-lg font-title uppercase text-gray hover:text-primary-dark dark:hover:text-primary-light">
                             Work
                         </span>
                     </a>

@@ -22,7 +22,7 @@ export default function DarkModeToggle() {
         <Switch
             checked={enabled}
             onChange={setEnabled}
-            className="group inline-flex h-6 w-11 items-center rounded-full my-5 bg-accent-2 transition data-checked:bg-accent-1 hover:cursor-pointer"
+            className="group inline-flex h-6 w-11 items-center rounded-full my-6 bg-accent-2 transition data-checked:bg-accent-1 hover:cursor-pointer"
         >
             <span className="size-5 translate-x-1 rounded-full transition group-data-checked:translate-x-5" >
                 {enabled ? <MoonIcon /> : <SunIcon />}

@@ -14,8 +14,8 @@
 
     --color-primary-light: #F5F5F5;
     --color-primary-dark: #000839;
-    --color-accent-1: #005082;
-    --color-accent-2: #FFA41B;
+    --color-accent-1: #005082; /*blue*/
+    --color-accent-2: #FFA41B; /*orange*/
     --color-gray: #64748B;
 
     --font-title: "Barlow Condensed", sans-serif;
