@@ -22,6 +22,31 @@
     --font-body: "Raleway", sans-serif;
 }
 
+html,
+body,
+#root {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.interface {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.interface-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, Opera */
+}
+
 p {
     @apply text-base;
 }
