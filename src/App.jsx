@@ -1,14 +1,29 @@
-import { Route, Routes } from "react-router-dom";
-import Home from "./components/Home";
+import { Route, Routes } from "react-router-dom"
+import Home from "./components/Home"
+import React from "react"
+import { useState } from "react"
+import Experience from "./components/webgl/Experience.jsx"
+
+export const ThemeContext = React.createContext();
 
 export default function App() {
-	
+	const [darkTheme, setDarkTheme] = useState(() => localStorage.theme === "dark")
+
+	function toggleTheme() {
+		setDarkTheme(prevDarkTheme => !prevDarkTheme)
+	}
+
 	return (
-		// <div className="interface bg-primary-light text-primary-dark dark:bg-primary-dark dark:text-primary-light z-10">
-		<div className="interface text-primary-dark dark:text-primary-light z-10">
-			<Routes>
-				<Route path="/" element={<Home />} />
-			</Routes>
-		</div>
+		<ThemeContext.Provider value={{darkTheme, toggleTheme}}>
+
+			<Experience />
+
+			<div className={`interface z-10 ${darkTheme ? 'text-primary-light' : 'text-primary-dark'}`}>
+				<Routes>
+					<Route path="/" element={<Home />} />
+				</Routes>
+			</div>
+
+		</ThemeContext.Provider>
 	)
 }

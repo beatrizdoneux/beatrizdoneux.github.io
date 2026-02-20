@@ -1,4 +1,4 @@
-import Section from "../helpers/Section";
+import Section from "../helpers/Section"
 
 export default function About() {
     return (
