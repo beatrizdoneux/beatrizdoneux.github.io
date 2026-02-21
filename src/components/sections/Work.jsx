@@ -1,8 +1,7 @@
+import { ArrowUpRightIcon } from "@heroicons/react/24/solid"
+
 import Card from "../helpers/Card"
 import Section from "../helpers/Section"
-import { ArrowUpRightIcon } from "@heroicons/react/24/solid"
-import { Description, Dialog, DialogPanel, DialogTitle } from "@headlessui/react"
-import { useState } from "react"
 
 
 export default function Work() {

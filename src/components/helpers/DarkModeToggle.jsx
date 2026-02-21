@@ -3,6 +3,7 @@ import { Switch } from "@headlessui/react"
 import { SunIcon } from "@heroicons/react/24/solid"
 import { MoonIcon } from "@heroicons/react/24/solid"
 import { useContext } from "react"
+
 import { ThemeContext } from "../../App"
 
 export default function DarkModeToggle() {

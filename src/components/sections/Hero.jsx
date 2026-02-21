@@ -1,5 +1,6 @@
-import DarkModeToggle from "../helpers/DarkModeToggle"
 import Icon from "../helpers/Icon"
+
+import DarkModeToggle from "../helpers/DarkModeToggle"
 import Navbar from "./Navbar"
 
 export default function Hero() {
