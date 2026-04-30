@@ -7,20 +7,28 @@ import { useContext } from "react"
 import { ThemeContext } from "../../App"
 
 export default function DarkModeToggle() {
-    
-    const {darkTheme, toggleTheme} = useContext(ThemeContext)
+
+    const { darkTheme, toggleTheme } = useContext(ThemeContext)
 
     useEffect(() => {
-        const root = document.documentElement;
+        const root = document.documentElement
 
-        if (darkTheme) {
-            root.classList.add("dark");
-            localStorage.theme = "dark";
-        } else {
-            root.classList.remove("dark");
-            localStorage.theme = "light";
+        try {
+            if (darkTheme) {
+                root.classList.add("dark")
+                localStorage.setItem("theme", "dark")
+            } else {
+                root.classList.remove("dark")
+                localStorage.setItem("theme", "light")
+            }
+        } catch {
+            if (darkTheme) {
+                root.classList.add("dark")
+            } else {
+                root.classList.remove("dark")
+            }
         }
-    }, [darkTheme]);
+    }, [darkTheme])
 
     return (
         <Switch

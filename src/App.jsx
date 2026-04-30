@@ -9,7 +9,15 @@ export const ThemeContext = React.createContext();
 
 export default function App() {
 	
-	const [darkTheme, setDarkTheme] = useState(() => localStorage.theme === "dark")
+	const [darkTheme, setDarkTheme] = useState(() => {
+    try {
+        return typeof window !== "undefined" &&
+            window.localStorage &&
+            localStorage.theme === "dark"
+    } catch {
+        return false;
+    }
+})
 
 	function toggleTheme() {
 		setDarkTheme(prevDarkTheme => !prevDarkTheme)
