@@ -1,6 +1,6 @@
 import About from "./sections/About"
 import Footer from "./sections/Footer"
-import Hero from "./sections/Hero"
+import Hero from "./sections/Header"
 import Work from "./sections/Work"
 
 export default function Home() {

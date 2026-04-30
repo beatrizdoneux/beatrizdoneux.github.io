@@ -48,7 +48,7 @@ function ProjectCard({ title, description, link, tags }) {
 
                     <div className="flex gap-3 flex-wrap mt-2">
                         {tags.map((tag) => (
-                            <span key={tag} className="rounded-2xl border-1 border-accent-2 text-primary-dark py-1 px-3 text-sm dark:border-accent-1 dark:text-primary-light">{tag}</span>
+                            <span key={tag} className="tag rounded-2xl border-1 border-accent-2 text-primary-dark py-1 px-3 text-sm dark:border-accent-1 dark:text-primary-light">{tag}</span>
                         ))}
                     </div>
                 </div>

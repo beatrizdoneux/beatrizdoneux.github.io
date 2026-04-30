@@ -1,0 +1,24 @@
+<svg viewBox="0 0 63 83" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round">
+  <!-- Stem -->
+  <path d="M31.5 2 L31.2 73" />
+
+  <!-- Branches -->
+  <path d="M42 11 C40 20 34 27 31 35" />
+  <path d="M52 10 C44 23 37 30 31 35" />
+  <path d="M55 22 C46 34 40 33 31 35" />
+  <path d="M22 14 C22 21 25 28 31 35" />
+  <path d="M8 11 C12 24 24 29 31 35" />
+  <path d="M1 22 C0 31 18 32 31 35" />
+
+  <!-- Seeds -->
+  <circle cx="31.5" cy="2" r="2" fill="#ffffff" stroke="none"/>
+  <circle cx="53" cy="10" r="2" fill="#ffffff" stroke="none"/>
+  <circle cx="42" cy="11" r="2" fill="#ffffff" stroke="none"/>
+  <circle cx="22" cy="14" r="2" fill="#ffffff" stroke="none"/>
+  <circle cx="55" cy="21" r="2" fill="#ffffff" stroke="none"/>
+  <circle cx="1.5" cy="22" r="2" fill="#ffffff" stroke="none"/>
+  <circle cx="8" cy="11" r="2" fill="#ffffff" stroke="none"/>
+
+  <!-- Base -->
+  <ellipse cx="31.5" cy="77" rx="2.3" ry="5" fill="#ffffff" stroke="none"/>
+</svg>

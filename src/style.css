@@ -25,6 +25,10 @@
     --font-body: "Raleway", sans-serif;
 }
 
+:root {
+  color-scheme: light dark;
+}
+
 html,
 body,
 #root {
@@ -33,6 +37,10 @@ body,
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+body {
+    overscroll-behavior: none;
 }
 
 .interface {
@@ -44,18 +52,25 @@ body,
     overflow-y: scroll;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    overscroll-behavior: none;
 }
 
 .interface-webkit-scrollbar {
     display: none;  /* Chrome, Safari, Opera */
 }
 
+canvas {
+    touch-action: none;
+    overflow: hidden;
+}
+
+
 p {
     @apply text-base;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    @apply font-title uppercase;
+    @apply font-title uppercase ;
 }
 
 h1 {
@@ -64,4 +79,8 @@ h1 {
 
 h2 {
     @apply text-3xl;
+}
+
+h1, h2, h3, h4, h5, h6, p, .tag, .icon {
+    @apply bg-primary-light/60 dark:bg-primary-dark/60;
 }

@@ -3,7 +3,7 @@ import Icon from "../helpers/Icon"
 import DarkModeToggle from "../helpers/DarkModeToggle"
 import Navbar from "./Navbar"
 
-export default function Hero() {
+export default function Header() {
     return (
         <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[40%] lg:flex-col lg:justify-between lg:py-24">
             <div>
@@ -14,19 +14,25 @@ export default function Hero() {
                 <Navbar />
 
             </div>
-            
+
             <DarkModeToggle />
 
             <ul className="mt-8 flex items-center" aria-label="Social media and resumé">
-                <li className="mr-5 shrink-0 text-xs">
-                    <Icon href="mailto:beatrizdoneux@outlook.com" label="Email" icon="fa-regular fa-envelope" />
-                </li>
-                <li className="mr-5 shrink-0 text-xs">
-                    <Icon href="https://www.linkedin.com/in/beatrizdoneux/" label="LinkedIn" icon="fa-brands fa-linkedin-in" />
-                </li>
-                <li className="mr-5 shrink-0 text-xs">
-                    <Icon href="https://github.com/beatrizdoneux" label="Github" icon="fa-brands fa-github" />
-                </li>
+                <SocialMediaIcon
+                    href="mailto:beatrizdoneux@outlook.com"
+                    label="Email"
+                    icon="fa-regular fa-envelope"
+                />
+                <SocialMediaIcon
+                    href="https://www.linkedin.com/in/beatrizdoneux/"
+                    label="LinkedIn"
+                    icon="fa-brands fa-linkedin-in"
+                />
+                <SocialMediaIcon
+                    href="https://github.com/beatrizdoneux"
+                    label="Github"
+                    icon="fa-brands fa-github"
+                />
                 {/* <li>
                     <a className="rounded-lg bg-accent-2 py-1 px-3 hover:cursor-pointer dark:bg-accent-1 dark:text-primary-light">
                         Resume
@@ -37,3 +43,10 @@ export default function Hero() {
     )
 }
 
+function SocialMediaIcon({ href, label, icon }) {
+    return (
+        <li className="icon mr-5 shrink-0 text-xs" aria-label={label}>
+            <Icon href={href} label={label} icon={icon} aria-hidden="true" />
+        </li>
+    )
+}

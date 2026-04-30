@@ -4,7 +4,7 @@ import { TextureLoader } from "three"
 import * as THREE from "three"
 
 import { ThemeContext } from "../../App"
-import seedSvg from "../../assets/seed.svg"
+import seedSvg from "../../assets/drawing.svg"
 
 export default function Experience() {
 
@@ -30,9 +30,13 @@ export default function Experience() {
     }, [darkTheme])
 
     return (
-        <Canvas className="fixed top-0 left-0 w-full h-full -z-10" camera={{ fov: 45, near: 0.1, far: 200, position: [2.5, 4, 6] }}>
+        <Canvas
+            className="experience fixed top-0 left-0 w-full h-full -z-10"
+            ortographic
+            camera={{ zoom: 2, position: [0, 0, 10] }}
+            >
             <color args={[bgColor]} attach="background" />
-            <Seeds sparkleColor={sparkleColor} />
+            <Seeds sparkleColor={sparkleColor} sleep={false} />
         </Canvas>
     )
 }
@@ -40,6 +44,9 @@ export default function Experience() {
 function Seeds({ sparkleColor }) {
 
     const { viewport, camera } = useThree()
+
+    const halfWidth = viewport.width / 2
+    const halfHeight = viewport.height / 2
 
     // number of seeds scaled to viewport width
     const count = Math.max(8, Math.floor(viewport.width * 3))
@@ -61,8 +68,8 @@ function Seeds({ sparkleColor }) {
             rotationSpeed: 0.5 + Math.random(),
             driftAmplitude: 0.5 + Math.random() * 0.5,
             driftOffset: Math.random() * Math.PI * 2,
-            scale: 0.4 + Math.random() * 0.03,
-            
+            scale: 0.3 + (Math.random() * 0.2),
+
             // flee state
             fleeVel: new THREE.Vector3(),
             fleeing: false,
@@ -102,12 +109,16 @@ function Seeds({ sparkleColor }) {
             // Base movement (vertical float + drift)
             seed.position.y += delta * data.speed
 
-            // Reset when too high
-            if (seed.position.y > viewport.height / 2) {
-                seed.position.y = -viewport.height
+            // Vertical reset
+            if (seed.position.y > halfHeight) {
+                seed.position.y = -halfHeight
                 seed.position.x = (Math.random() - 0.5) * viewport.width
                 data.speed = 0.3 + Math.random() * 0.3
             }
+
+            // Horizontal wrap
+            if (seed.position.x > halfWidth) seed.position.x = -halfWidth
+            if (seed.position.x < -halfWidth) seed.position.x = halfWidth
 
             seed.position.x += Math.sin(time + data.driftOffset) * data.driftAmplitude * delta * 0.5
             seed.material.rotation += delta * data.rotationSpeed

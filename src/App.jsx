@@ -8,6 +8,7 @@ import Experience from "./components/webgl/Experience.jsx"
 export const ThemeContext = React.createContext();
 
 export default function App() {
+	
 	const [darkTheme, setDarkTheme] = useState(() => localStorage.theme === "dark")
 
 	function toggleTheme() {
