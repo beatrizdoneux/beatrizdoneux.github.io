@@ -11,7 +11,7 @@ export default function Work() {
                 <ProjectCard
                     title="Three JS"
                     description="A compilation of projects created using ThreeJS, React Three Fiber and Blender."
-                    link=""
+                    link="https://beatrizdoneux.github.io/three/"
                     tags={["ThreeJS", "Blender", "React Three Fiber"]}
                 />
 
